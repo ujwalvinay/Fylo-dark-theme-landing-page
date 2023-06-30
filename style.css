@@ -97,8 +97,8 @@ body {
   display: flex;
   justify-content: center;
   padding-inline: 10%;
-  padding-left: 15%;
-  margin: auto;
+  padding-left: 12%;
+  margin: 0 auto;
 }
 .container .productive-section .img-div {
   width: 50%;
@@ -120,8 +120,150 @@ body {
   font-family: "Open Sans", sans-serif;
   margin-block: 1rem;
 }
-.container .productive-section .text-div a {
-  margin-block: 1.5rem;
+.container .productive-section .text-div .last-child {
+  margin-bottom: 3rem;
+}
+.container .productive-section .text-div .see-tag {
+  padding-top: 4rem;
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.container .testimonial-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: hsl(218, 28%, 13%);
+  padding-block: 8rem;
+  padding-bottom: 15rem;
+  position: relative;
+}
+.container .testimonial-section .testimonial-card {
+  width: 26rem;
+  background-color: hsl(219, 30%, 18%);
+  padding: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.container .testimonial-section .testimonial-card p {
+  width: 90%;
+}
+.container .testimonial-section .testimonial-card .nameCard {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 2rem;
+}
+.container .testimonial-section .testimonial-card .nameCard .testimonial-img {
+  width: 50px;
+  border-radius: 50%;
+}
+.container .testimonial-section .testimonial-card .nameCard h6 {
+  padding-top: 6px;
+  opacity: 0.7;
+}
+.container .testimonial-section .first-card {
+  position: relative;
+}
+.container .testimonial-section .quotes-icon {
+  position: absolute;
+  top: 6rem;
+  left: 17rem;
+}
+.container .footer-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .footer-section .newsletter-card {
+  background-color: hsl(217, 28%, 15%);
+  box-shadow: 4px 4px 19px -4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 3rem;
+  width: 50%;
+  position: absolute;
+  top: -10rem;
+}
+.container .footer-section .newsletter-card h2 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
   padding-bottom: 1rem;
+}
+.container .footer-section .newsletter-card p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.container .footer-section .newsletter-card .input-area {
+  margin-top: 1rem;
+}
+.container .footer-section .newsletter-card .input-area input {
+  padding: 0.75rem 10rem;
+  padding-left: 2rem;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+.container .footer-section .newsletter-card .input-area .newsletter-btn {
+  padding: 0.75rem 2rem;
+  margin-left: 1.5rem;
+  border: none;
+  background: rgb(101, 226, 217);
+  background: linear-gradient(90deg, rgb(101, 226, 217) 0%, rgb(51, 158, 204) 100%);
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.container .footer-section .footer-area {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsl(216, 53%, 9%);
+  padding: 5rem 15rem;
+  padding-top: 10rem;
+  width: 100%;
+}
+.container .footer-section .footer-area .area1 {
+  width: 30%;
+}
+.container .footer-section .footer-area .area1 .logo-footer {
+  width: 120px;
+}
+.container .footer-section .footer-area .area1 .location-icon-div {
+  width: 20px;
+}
+.container .footer-section .footer-area .area1 .location-icon-div .location-icon {
+  margin: auto;
+  width: 100%;
+}
+.container .footer-section .footer-area .area1 .location-div {
+  display: flex;
+  gap: 10px;
+  padding: 1.5rem 0;
+}
+.container .footer-section .footer-area .area1 .location-div p {
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.container .footer-section .footer-area .area2 {
+  width: 8rem;
+  margin-top: 2rem;
+}
+.container .footer-section .footer-area .area2 .phone-div, .container .footer-section .footer-area .area2 .email-div {
+  display: flex;
+  gap: 10px;
+  padding-block: 1rem;
+}
+.container .footer-section .footer-area .area3, .container .footer-section .footer-area .area4 {
+  margin-top: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.container .footer-section .footer-area .area3 p, .container .footer-section .footer-area .area4 p {
+  padding: 10px 0;
+}
+.container .footer-section .footer-area .area3 h5, .container .footer-section .footer-area .area4 h5 {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

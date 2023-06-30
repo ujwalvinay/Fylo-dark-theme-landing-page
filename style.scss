@@ -127,8 +127,8 @@ body
         display: flex;
         justify-content: center;
         padding-inline: 10%;
-        padding-left: 15%;
-        margin: auto;
+        padding-left: 12%;
+        margin:0 auto;
         .img-div
         {
             width: 50%;
@@ -151,13 +151,187 @@ body
                 font-size: $fs-secondary;
                 font-family: $body-font;
                 margin-block: 1rem;
+                
             }
-            a
+            .last-child
+                {
+                    margin-bottom: 3rem;
+                }
+            .see-tag
             {
-                margin-block: 1.5rem;
+                padding-top: 4rem;
                 font-size: $fs-secondary;
-                padding-bottom: 1rem;
+                font-family: $body-font;
             }
         }
     }
+    .testimonial-section
+    {
+        display: flex;
+        justify-content:center;
+        gap: 3rem;
+        background-color: $secondary-bg;
+        padding-block: 8rem;
+        padding-bottom: 15rem;
+        position: relative;
+        .testimonial-card
+        {
+            width: 26rem;
+            background-color: $testimonial-bg;
+            padding: 1.5rem;
+            font-family: $body-font;
+            p
+            {
+                width: 90%;
+            }
+            .nameCard
+            {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                padding-top: 2rem;
+                .testimonial-img
+                {
+                    width: 50px;
+                    border-radius: 50%;
+                }
+                h6
+                {
+                    padding-top: 6px;
+                    opacity: .7;
+                }
+            }
+        }
+        .first-card
+        {
+            position: relative;
+        }
+        .quotes-icon
+        {
+                position: absolute;
+                top: 6rem;
+                left: 17rem;
+        }
+    }
+    .footer-section
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .newsletter-card
+        {
+            background-color: $primary-bg;
+            -webkit-box-shadow: 4px 4px 19px -4px rgba(0,0,0,0.7);
+            -moz-box-shadow: 4px 4px 19px -4px rgba(0,0,0,0.7);
+            box-shadow: 4px 4px 19px -4px rgba(0,0,0,0.7);
+            text-align: center;
+            padding: 3rem;
+            width: 50%;
+            position: absolute;
+            top: -10rem;
+            h2
+            {
+                font-size: 30px;
+                font-family: $main-font;
+                padding-bottom: 1rem;
+            }
+            p
+            {
+                width: 80%;
+                text-align: center;
+                margin: auto;
+                padding-bottom: 1rem;
+                line-height: 1.5;
+                font-size: $fs-secondary;
+            }
+            .input-area
+            {
+                margin-top: 1rem;
+                input
+                {
+                    padding: .75rem 10rem;
+                    padding-left: 2rem;
+                    color: black;
+                    border-radius: 20px;
+                    border: none;
+                    font-family: $body-font;
+                }
+                .newsletter-btn
+                {
+                    padding: .75rem 2rem;
+                    margin-left: 1.5rem;
+                    border: none;
+                    background: rgb(101,226,217);
+                    background: linear-gradient(90deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
+                    border-radius:20px;
+                    font-family: $body-font;
+                }
+            }
+        }
+        .footer-area
+        {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: $footer-bg;
+            padding: 5rem 15rem;
+            padding-top: 10rem;
+            width: 100%;
+            .area1
+            {
+                width: 30%;
+                .logo-footer
+                {
+                    width: 120px;
+                }
+                .location-icon-div
+                {
+                    width: 20px;
+                    .location-icon
+                    {
+                        margin: auto;
+                       width: 100%;
+                    }
+                }
+                .location-div
+                {
+                    display: flex;
+                    gap: 10px;
+                    padding: 1.5rem 0;
+                    p
+                    {
+                        width: 80%;
+                        font-family: $body-font;
+                        font-size: $fs-secondary;
+                        line-height:1.5;
+                    }
+                }    
+            }
+            .area2
+            {
+                width: 8rem;
+                margin-top:2rem;
+                .phone-div,.email-div
+                {
+                    display: flex;
+                    gap: 10px;
+                    padding-block: 1rem;
+                }
+            }
+            .area3,.area4
+            {
+                margin-top:2.5rem;
+                p
+                {
+                    padding: 10px 0;
+                }
+                h5
+                {
+                    font-size: 20px;
+                }
+                font-family: $body-font;
+            }
+        }
+    }
+    
 }
