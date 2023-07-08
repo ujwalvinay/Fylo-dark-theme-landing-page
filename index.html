@@ -6,7 +6,7 @@
     <title>Fylo Dark Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload='document.form1.text1.focus()'>
     <div class="container">
         <section class="hero-section">
             <nav class="navbar">
@@ -72,7 +72,7 @@
             </div>
             <div class="text-div">
                 <h2>
-                    Stay productive, <br>wherever you are
+                    Stay productive, wherever you are
                 </h2>
                 <p>
                     Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
@@ -143,7 +143,7 @@
             </div>
         </section>
         <section class="footer-section">
-            <div class="newsletter-card">
+            <div class="newsletter-card" >
                 <h2>
                     Get early access today
                 </h2>
@@ -151,9 +151,9 @@
                     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
                     questions, our support team would be happy to help you.
                 </p>
-                <div class="input-area">
-                    <input type="text" placeholder="email@example.com" type="email">
-                    <button type="submit" class="newsletter-btn">Get Started For Free</button>
+                <div class="input-area" name="form1">
+                    <input type="text" placeholder="email@example.com" type="email" name="text1">
+                    <button type="submit" name="submit" class="newsletter-btn" onclick="ValidateEmail(document.form1.text1)">Get Started For Free</button>
                 </div>
             </div>
             <div class="footer-area">
@@ -176,7 +176,7 @@
                             +1-543-123-4567
                         </p>
                     </div>
-                    <div class="email-div">
+                    <div class="email-div" >
                         <img src="./assets/icon-email.svg" alt="" class="icon email">
                         <p>
                             example@fylo.com
@@ -208,5 +208,6 @@
             </div>
         </section>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

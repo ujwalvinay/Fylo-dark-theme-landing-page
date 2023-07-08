@@ -8,7 +8,7 @@ $testimonial-bg:hsl(219, 30%, 18%);
 $main-font:'Raleway', sans-serif;
 $body-font:'Open Sans', sans-serif;
 $fs-secondary : 16px;
-
+$fs-mobile : 13px ;
 
 *
 {
@@ -41,7 +41,7 @@ body
         {
             display: flex;
             justify-content: space-between;
-            padding: 1rem 3rem;
+            padding: 2rem 3rem;
             .navbar-brand
             {
                 width: 150px;
@@ -143,6 +143,7 @@ body
                 line-height: 1.3;
                 font-family: $main-font;
                 margin-block: 1rem;
+                width: 30%;
             }
             p
             {
@@ -330,6 +331,205 @@ body
                     font-size: 20px;
                 }
                 font-family: $body-font;
+            }
+        }
+    }
+    
+}
+
+
+// responsive behavior
+
+@media screen and (max-width:540px) {
+    
+    .container
+    {
+        .hero-section
+        {
+            padding-bottom: 0rem;
+            background-image: url('./assets/bg-curvy-mobile.svg');
+            .navbar
+            {
+                align-items: center;
+                padding: 1rem 1.5rem;
+                background-position: center;
+                .navbar-brand
+                {
+                    width: 100px;
+                }
+                .navbar-items
+                {
+                    gap: .75rem;
+                    font-size: $fs-mobile;
+                }
+            }
+            .hero-img
+            {
+                width: 80%;
+                padding-block: 1rem;
+            }
+            h1
+            {
+                font-size: 25px;
+                width: 100%;
+            }
+            p
+            {
+                width: 70%;
+                font-size: $fs-mobile;
+            }
+        }
+        .service-section
+        {
+            padding-top: 5rem;
+            .parent
+            {
+                
+                top: 0px;
+                margin: 0%;
+                width: 100%;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows:repeat(4,1fr);
+                .service-item
+                {
+                    width: 80%;
+                    img
+                    {
+                        width: 50px;
+                    }
+                    h3
+                    {
+                        font-size: 18px;
+                    }
+                    p
+                    {
+                        font-size: $fs-mobile;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        .productive-section
+        {
+            flex-direction: column;
+            padding-block: 4rem;
+            .img-div
+            {
+                width: 80%;
+                margin: auto;
+                img
+                {
+                    width: 100%;
+                }
+            }
+            .text-div
+            {
+                width: 100%;
+                h2
+                {
+                    font-size: 18px;
+                    width: 100%;
+                }
+                p
+                {
+                    width: 90%;
+                    font-size: $fs-mobile;
+                }
+            }
+            .see-tag
+            {
+                font-size: $fs-mobile;
+            }
+        }
+        .testimonial-section
+        {
+            flex-direction: column;
+            align-items: center;
+            .testimonial-card
+            {
+                width: 80%;
+                p
+                {
+                    font-size: $fs-mobile;
+                    width: 100%;
+                    line-height: 1.5;
+                }
+                .nameCard
+                {
+                    padding-top: 1.5rem;
+                    .testimonial-img
+                    {
+                        width: 35px;
+                    }
+                    h6
+                    {
+                        padding-top: 3px;
+                    }
+                }
+                
+            }
+            .quotes-icon
+            {
+                left: 2rem;
+            }
+        }
+        .footer-section
+        {
+            .newsletter-card
+            {
+                width: 80%;
+                padding: 2rem;
+                border-radius: 10px;
+                h2
+                {
+                    font-size: 20px;
+                }
+                p
+                {
+                    width: 90%;
+                    font-size: $fs-mobile;
+                }
+                .input-area
+                {
+                    input
+                    {
+                        padding: .6rem 3rem;
+                        padding-left: 1rem;
+                        border-radius: 15px;
+                        margin-bottom: 1rem;
+                    }
+                    .newsletter-btn
+                    {
+                        padding: .6rem 3rem;
+                        width: 15rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .footer-area
+            {
+                padding: 15rem 2rem;
+                padding-bottom: 5rem;
+                flex-direction: column;
+                p
+                {
+                    font-size: $fs-mobile !important;
+                }
+                .area1
+                {
+                    width: 100%;
+                    .logo-footer
+                    {
+                        width: 100px;
+                    }
+                    .location-div
+                    {
+                        p
+                        {
+                            font-size: $fs-mobile;
+                        }
+                    }
+                }
             }
         }
     }

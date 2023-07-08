@@ -26,7 +26,7 @@ body {
 .container .hero-section .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
 }
 .container .hero-section .navbar .navbar-brand {
   width: 150px;
@@ -112,6 +112,7 @@ body {
   line-height: 1.3;
   font-family: "Raleway", sans-serif;
   margin-block: 1rem;
+  width: 30%;
 }
 .container .productive-section .text-div p {
   width: 60%;
@@ -266,4 +267,147 @@ body {
 }
 .container .footer-section .footer-area .area3 h5, .container .footer-section .footer-area .area4 h5 {
   font-size: 20px;
+}
+
+@media screen and (max-width: 540px) {
+  .container .hero-section {
+    padding-bottom: 0rem;
+    background-image: url("./assets/bg-curvy-mobile.svg");
+  }
+  .container .hero-section .navbar {
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-position: center;
+  }
+  .container .hero-section .navbar .navbar-brand {
+    width: 100px;
+  }
+  .container .hero-section .navbar .navbar-items {
+    gap: 0.75rem;
+    font-size: 13px;
+  }
+  .container .hero-section .hero-img {
+    width: 80%;
+    padding-block: 1rem;
+  }
+  .container .hero-section h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+  .container .hero-section p {
+    width: 70%;
+    font-size: 13px;
+  }
+  .container .service-section {
+    padding-top: 5rem;
+  }
+  .container .service-section .parent {
+    top: 0px;
+    margin: 0%;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .container .service-section .parent .service-item {
+    width: 80%;
+  }
+  .container .service-section .parent .service-item img {
+    width: 50px;
+  }
+  .container .service-section .parent .service-item h3 {
+    font-size: 18px;
+  }
+  .container .service-section .parent .service-item p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .container .productive-section {
+    flex-direction: column;
+    padding-block: 4rem;
+  }
+  .container .productive-section .img-div {
+    width: 80%;
+    margin: auto;
+  }
+  .container .productive-section .img-div img {
+    width: 100%;
+  }
+  .container .productive-section .text-div {
+    width: 100%;
+  }
+  .container .productive-section .text-div h2 {
+    font-size: 18px;
+    width: 100%;
+  }
+  .container .productive-section .text-div p {
+    width: 90%;
+    font-size: 13px;
+  }
+  .container .productive-section .see-tag {
+    font-size: 13px;
+  }
+  .container .testimonial-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .testimonial-section .testimonial-card {
+    width: 80%;
+  }
+  .container .testimonial-section .testimonial-card p {
+    font-size: 13px;
+    width: 100%;
+    line-height: 1.5;
+  }
+  .container .testimonial-section .testimonial-card .nameCard {
+    padding-top: 1.5rem;
+  }
+  .container .testimonial-section .testimonial-card .nameCard .testimonial-img {
+    width: 35px;
+  }
+  .container .testimonial-section .testimonial-card .nameCard h6 {
+    padding-top: 3px;
+  }
+  .container .testimonial-section .quotes-icon {
+    left: 2rem;
+  }
+  .container .footer-section .newsletter-card {
+    width: 80%;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .container .footer-section .newsletter-card h2 {
+    font-size: 20px;
+  }
+  .container .footer-section .newsletter-card p {
+    width: 90%;
+    font-size: 13px;
+  }
+  .container .footer-section .newsletter-card .input-area input {
+    padding: 0.6rem 3rem;
+    padding-left: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+  .container .footer-section .newsletter-card .input-area .newsletter-btn {
+    padding: 0.6rem 3rem;
+    width: 15rem;
+    margin-left: 0;
+  }
+  .container .footer-section .footer-area {
+    padding: 15rem 2rem;
+    padding-bottom: 5rem;
+    flex-direction: column;
+  }
+  .container .footer-section .footer-area p {
+    font-size: 13px !important;
+  }
+  .container .footer-section .footer-area .area1 {
+    width: 100%;
+  }
+  .container .footer-section .footer-area .area1 .logo-footer {
+    width: 100px;
+  }
+  .container .footer-section .footer-area .area1 .location-div p {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */
